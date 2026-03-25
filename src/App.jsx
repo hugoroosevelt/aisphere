@@ -1,7 +1,7 @@
 import mapboxgl from "mapbox-gl";
 import { useEffect, useRef, useState } from "react";
 
-mapboxgl.accessToken = "pk.eyJ1IjoiaHVnb3Jvb3NldmVsdCIsImEiOiJjbW4wazQ2eDAwbGJiMnFwd3phb3dkMmJ5In0.wdwfmLal588dZbetKVcORg";
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
 
 // 🌍 coords
 const countryCoords = {
